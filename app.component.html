@@ -1,0 +1,39 @@
+<div class="container">
+  <div class="row">
+      <div class="col-sm-12 text-center">
+          <h1>SMS</h1>
+      </div>
+  </div>
+
+  <div>
+      <form  #smsForm="ngForm">
+          <div class="form-group">
+              <div class="row">
+                  <div class="col-sm-4">
+                      <label for="date"> Draw Date:</label>
+                  </div>
+                  <div class="col-sm-8">
+                      <input type="date" id="date" class="form-control" name="date" required
+                          [(ngModel)]="drawDate">
+                  </div>
+              </div>
+          </div>
+          <div class="my-3"></div>
+          <div class="row">
+              <div class="col-sm-4">
+                  <label for="message">Message:</label>
+              </div>
+              <div class="col-sm-8">
+                  <textarea id="message" class="form-control" name="message" maxlength="10" required
+                      [(ngModel)]="message"></textarea>
+              </div>
+          </div>
+          <div class="row mt-3">
+              <div class="col-sm-12 d-flex justify-content-center">
+                  <button type="button" class="btn btn-secondary mx-2" (click)="onSubmit()">Send</button>
+                  <button type="button" class="btn btn-warning mx-2" (click)="clearForm()">Clear</button>
+              </div>
+          </div>
+      </form>
+  </div>
+</div>

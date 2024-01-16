@@ -1,0 +1,17 @@
+.container{
+    color: grey;
+    background-color:bisque ;
+    border: 5px solid;
+    border-radius: 5px;
+    margin: 0 auto;
+    max-width: 400px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(70, 69, 69, 0.961);
+}
+h1{
+    font-family: cursive;
+}
+label{
+    font-weight: bolder;
+    font-family: cursive;
+}
